@@ -143,6 +143,32 @@ namespace CapaDatosW
             }
         }
 
+        public void RegistradoMatricula(int id)
+        {
+            SqlConnection Con = null;
+            DataTable tabla = new DataTable();
+            try
+            {
+                Con = clsConexion.GetInstance().ConexionBD();
+                SqlCommand Cmd = new SqlCommand("sp_registradoMatricula", Con);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("@idmatricula", id);
+        
+                Con.Open();
+                Cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                tabla = null;
+                throw e;
+            }
+            finally
+            {
+                Con.Close();
+            }
+        }
+
+
         public void EliminarMatricula(int id)
         {
             SqlConnection Con = null;

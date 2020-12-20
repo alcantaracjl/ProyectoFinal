@@ -75,6 +75,18 @@ namespace CapaLogicaW
                 throw ex;
             }
         }
+        public void RegistradoMatricula(int id)
+        {
+            try
+            {
+                CapaDatosW.clsMatriculaDatos.GetInstance().RegistradoMatricula(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
 
         public void EliminarMatricula(int id)
         {

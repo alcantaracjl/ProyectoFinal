@@ -29,7 +29,7 @@ namespace CapaPresentacionW.Vistas
 
                     cboTipousuario.DataBind();
 
-                    cboTipousuario.SelectedIndex = -1;
+                    
 
 
 
@@ -85,17 +85,14 @@ namespace CapaPresentacionW.Vistas
             cls.Contrasenia = txtContrasenia.Text;
             cls.Nombres = txtNombre.Text;
             cls.ApellidoPat = this.TxtApellidopat.Text;
-                       cls.ApellidoMat = this.txtApellidomat.Text;
+            cls.ApellidoMat = this.txtApellidomat.Text;
             cls.Telefono = txtTelefono.Text;
             cls.Correo = txtCorreo.Text;
-                        cls.Estado = lbxEstado.SelectedValue;
+            cls.Estado = lbxEstado.SelectedValue;
+             cls.Idrol=Convert.ToInt32(cboTipousuario.SelectedItem.Value);
 
 
-        
-            cls.Idrol=Convert.ToInt32(cboTipousuario.SelectedItem.Value);
-
-
-            if ( idUsuario!= null)
+            if ( idUsuario== null)
             {
                 CapaLogicaW.clsUsuarioLogica.GetInstance().RegistrarUsuario(cls);
                 Response.Redirect("Usuarios.aspx");

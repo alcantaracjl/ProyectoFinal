@@ -168,12 +168,6 @@ namespace CapaPresentacionW.Vistas
         protected void GVForm2_RowCommand(object sender, GridViewCommandEventArgs e)
         {
 
-
-
-
-
-
-
             int idx;
           
 
@@ -254,6 +248,8 @@ namespace CapaPresentacionW.Vistas
 
 
                 }
+
+                CapaLogicaW.clsMatriculaLogica.GetInstance().RegistradoMatricula(cls.IdMatricula);
                 Session["idCursoMatriculaReg"] = null;
                 Session["idregistrar"] = null;
                 Response.Redirect("Menu.aspx");
