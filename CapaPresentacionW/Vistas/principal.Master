@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="principal.master.cs" Inherits="Presentacion.principal1" %>
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../css/stylesmenu.css" rel="stylesheet" type="text/css" />
+	 <link href="../js/StyleSheet1.css" rel="stylesheet" type="text/javascript" />
+	<link href="../css/stylesForm.css" rel="stylesheet" />
+	    <title>ACAPE</title>
+  <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+          <h1>Sistema de Matricula</h1>
+	<p>Bienvenido:</p>
+	<nav role="navigation">
+		<ul class="access-menu">
+			<li>
+				<a href="Menu.aspx" id="inicio">Inicio</a>
+				
+			</li>
+			<li>
+				<a href="Perfil.aspx">Perfil</a>
+				
+			</li>
+			<li>
+				<a href="#">Matricula</a>
+				<ul class="access-submenu">
+					<li><a href="Matricula.aspx">Registrar Matricula</a></li>
+					<li><a href="Matricula_Curso.aspx">Registrar Cursos</a></li>
+					
+				</ul>
+			</li>
+			<li>
+				<a href="#">Tablas Maestras</a>
+				<ul class="access-submenu">
+					<li><a href="Alumno.aspx">Alumno</a></li>
+					<li><a href="Clases.aspx">Registrar Clases</a></li>
+					<li><a href="Curso.aspx">Cursos</a></li>
+					<li><a href="Docente.aspx">Docente</a></li>
+					<li><a href="Escuela.aspx">Escuela Falta</a></li>
+					<li><a href="Facultad.aspx">Facultad Falta</a></li>
+					<li><a href="Horario.aspx">Horario Falta</a></li>
+					<li><a href="PlanEstudio.aspx">PlanEstudio Falta</a></li>
+					<li><a href="PlanEstudio_Curso.aspx">DetallePlanEstudio Falta</a></li>
+					<li><a href="Usuarios.aspx">Usuario</a></li>
+					<li><a href="Permisos.aspx">Permisos</a></li>
+					<li><a href="Rol.aspx">Rol Falta</a></li>
+					
+					
+				</ul>
+			</li>
+		<li>
+				<a href="index.aspx" >Salir</a>
+				
+			</li>
+		</ul>
+	</nav>
+        </div>
+		<div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+   <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+	    </form>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+C:\Users\luisc\source\repos\CapaEntidadesW\bin\Debug\CapaEntidadesW.dll
+C:\Users\luisc\source\repos\CapaEntidadesW\bin\Debug\CapaEntidadesW.pdb
+C:\Users\luisc\source\repos\CapaEntidadesW\obj\Debug\CapaEntidadesW.csprojAssemblyReference.cache
+C:\Users\luisc\source\repos\CapaEntidadesW\obj\Debug\CapaEntidadesW.csproj.CoreCompileInputs.cache
+C:\Users\luisc\source\repos\CapaEntidadesW\obj\Debug\CapaEntidadesW.dll
+C:\Users\luisc\source\repos\CapaEntidadesW\obj\Debug\CapaEntidadesW.pdb
+C:\Users\luisc\Desktop\Practica04\CapaEntidadesW\bin\Debug\CapaEntidadesW.dll
+C:\Users\luisc\Desktop\Practica04\CapaEntidadesW\bin\Debug\CapaEntidadesW.pdb
+C:\Users\luisc\Desktop\Practica04\CapaEntidadesW\obj\Debug\CapaEntidadesW.csprojAssemblyReference.cache
+C:\Users\luisc\Desktop\Practica04\CapaEntidadesW\obj\Debug\CapaEntidadesW.csproj.CoreCompileInputs.cache
+C:\Users\luisc\Desktop\Practica04\CapaEntidadesW\obj\Debug\CapaEntidadesW.dll
+C:\Users\luisc\Desktop\Practica04\CapaEntidadesW\obj\Debug\CapaEntidadesW.pdb

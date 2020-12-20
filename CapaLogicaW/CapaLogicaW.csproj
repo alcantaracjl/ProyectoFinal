@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4ECB4C7F-5B13-489C-962D-FE00E5BD6D98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaLogicaW</RootNamespace>
+    <AssemblyName>CapaLogicaW</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAlumnoLogica.cs" />
+    <Compile Include="clsCicloLogica.cs" />
+    <Compile Include="clsClasesLogica.cs" />
+    <Compile Include="clsCursosLogica.cs" />
+    <Compile Include="clsDetalleMatriculaLogica.cs" />
+    <Compile Include="clsDetallePlanEstudioLogica.cs" />
+    <Compile Include="clsDocenteLogica.cs" />
+    <Compile Include="clsEscuelaLogica.cs" />
+    <Compile Include="clsFacultadLogica.cs" />
+    <Compile Include="clsHorarioLogica.cs" />
+    <Compile Include="clsMatriculaLogica.cs" />
+    <Compile Include="clsModuloLogica.cs" />
+    <Compile Include="clsPeriodoLogica.cs" />
+    <Compile Include="clsPlanEstudioLogica.cs" />
+    <Compile Include="clsRolLogica.cs" />
+    <Compile Include="clsRolModuloLogica.cs" />
+    <Compile Include="clsSeccionLogica.cs" />
+    <Compile Include="clsUsuarioLogica.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatosW\CapaDatosW.csproj">
+      <Project>{1e5ef069-0304-43a8-84c4-e353b5e2d7d5}</Project>
+      <Name>CapaDatosW</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidadesW\CapaEntidadesW.csproj">
+      <Project>{b726da15-95f7-4b7e-9553-28bfe3169dec}</Project>
+      <Name>CapaEntidadesW</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
