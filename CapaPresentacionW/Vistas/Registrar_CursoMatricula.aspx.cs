@@ -154,13 +154,6 @@ namespace CapaPresentacionW.Vistas
                 }
 
 
-
-                
-
-
-                
-
-               // Response.Redirect("Registrar_CursoMatricula.aspx");
             }
         }
 
@@ -174,7 +167,74 @@ namespace CapaPresentacionW.Vistas
 
         protected void GVForm2_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            
+
+
+
+
+
+
+
+            int idx;
+          
+
+            int index = Convert.ToInt32(e.CommandArgument);
+            idx = Convert.ToInt32(dtgCursos.DataKeys[index].Value);
+           // Session["idregistrar"] = idx;
+            if (e.CommandName == "Seleccionar")
+            {
+                
+
+                if (((DataTable)Session["tablita"]).Rows.Count > 0)
+                {
+
+                    foreach (DataRow f in ((DataTable)Session["tablita"]).Rows)
+                    {
+
+                        if (Convert.ToInt32(f[((DataTable)Session["tablita"]).Columns[0]].ToString()) == idx)
+                        {
+                           f.Delete();
+                            break;
+                            //eliminar
+                        }
+
+                    }
+                     ((DataTable)Session["tablita"]).AcceptChanges();
+
+                }
+
+                dtgCursos.DataSource = ((DataTable)Session["tablita"]);
+                dtgCursos.DataBind();
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
         protected void cmdRegistrar_Click(object sender, EventArgs e)

@@ -38,6 +38,17 @@ namespace CapaLogicaW
             }
         }
 
+        public DataTable ListarMatriculaReservadaIdUsuario(String id)
+        {
+            try
+            {
+                return CapaDatosW.clsMatriculaDatos.GetInstance().ListarMatriculaReservadaIdUsuario(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         public void RegistrarMatricula(CapaEntidadesW.clsMatriculaEntidad cls)
         {

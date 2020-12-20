@@ -81,6 +81,7 @@
     <Content Include="Vistas\Horario.aspx" />
     <Content Include="Vistas\index.aspx" />
     <Content Include="Vistas\Matricula.aspx" />
+    <Content Include="Vistas\MatriculaReservada.aspx" />
     <Content Include="Vistas\Matricula_Curso.aspx" />
     <Content Include="Vistas\Menu.aspx" />
     <Content Include="Vistas\Perfil.aspx" />
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="Vistas\Matricula.aspx.designer.cs">
       <DependentUpon>Matricula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\MatriculaReservada.aspx.cs">
+      <DependentUpon>MatriculaReservada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\MatriculaReservada.aspx.designer.cs">
+      <DependentUpon>MatriculaReservada.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Matricula_Curso.aspx.cs">
       <DependentUpon>Matricula_Curso.aspx</DependentUpon>

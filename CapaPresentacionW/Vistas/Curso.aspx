@@ -25,7 +25,7 @@
 <AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
 
                 <Columns>
-                    <asp:BoundField DataField="idCurso" HeaderText="idCurso" SortExpression="idCurso" />
+                    <asp:BoundField DataField="idCurso" HeaderText="idCurso" SortExpression="idCurso"  visible="false"/>
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
                                         <asp:BoundField DataField="Creditos" HeaderText="Creditos" SortExpression="Creditos" />
                     <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />

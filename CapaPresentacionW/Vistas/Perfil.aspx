@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/principal.Master" AutoEventWireup="true" CodeBehind="Perfil.aspx.cs" Inherits="CapaPresentacionW.Vistas.Perfil" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
      <div class="container-contact100">
@@ -24,8 +23,7 @@
 					<span class="label-input100">Apellido Paterno : </span>
                     <asp:Label ID="lblapepat" runat="server" Text="Label"></asp:Label>
 				</div>
-			</div>
-                <div class="wrap-input100 validate-input bg1" data-validate="Ingrese su apellido materno">
+			 <div class="wrap-input100 validate-input bg1" data-validate="Ingrese su apellido materno">
 					<span class="label-input100">Apellido Materno : </span>
                      <asp:Label ID="lblapemat" runat="server" Text="Label"></asp:Label>
 				</div>
@@ -45,6 +43,9 @@
 					<span class="label-input100">Tipo Usuario : </span>
                      <asp:Label ID="lbltipo" runat="server" Text="Label"></asp:Label>
 				</div>
+
+			</div>
+               
 
 			
 		</div>

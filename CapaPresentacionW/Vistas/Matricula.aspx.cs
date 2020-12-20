@@ -65,7 +65,14 @@ namespace CapaPresentacionW.Vistas
             {
                 idx = Convert.ToInt32(dtgMatricula.DataKeys[index].Value);
                 Session["idMatriculaReg"] = idx;
-                Response.Redirect("Registrar_Matricula.aspx");
+
+                CapaEntidadesW.clsMatriculaEntidad cls2 = new CapaEntidadesW.clsMatriculaEntidad();
+                cls2.IdMatricula=idx;
+                cls2.Estado="Reservado";
+                cls2.Fecha= DateTime.Now.Date;
+                CapaLogicaW.clsMatriculaLogica.GetInstance().ReservarMatricula(cls2);
+                Response.Redirect("Matricula.aspx");
+
             }
         }
 

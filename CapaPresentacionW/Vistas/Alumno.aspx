@@ -28,9 +28,9 @@
                     <asp:BoundField DataField="codAlumno" HeaderText="codAlumno" SortExpression="codAlumno" />
                     <asp:BoundField DataField="idusuario" HeaderText="idusuario" SortExpression="idusuario" />
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
-                    <asp:BoundField DataField="idescuela" HeaderText="idescuela" SortExpression="idescuela" />
+                    <asp:BoundField DataField="idescuela" HeaderText="idescuela" SortExpression="idescuela" visible="false"/>
                     <asp:BoundField DataField="Escuela" HeaderText="Escuela" SortExpression="Escuela" />
-                    <asp:BoundField DataField="idPeriodo" HeaderText="idPeriodo" SortExpression="idPeriodo" />
+                    <asp:BoundField DataField="idPeriodo" HeaderText="idPeriodo" SortExpression="idPeriodo"  visible="false" />
                     <asp:BoundField DataField="Sem_Ingreso" HeaderText="Sem_Ingreso" SortExpression="Sem_Ingreso" />
                     <asp:BoundField DataField="estado" HeaderText="estado" SortExpression="estado" />
                     

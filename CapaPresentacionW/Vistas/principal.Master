@@ -33,6 +33,7 @@
 				<a href="#">Matricula</a>
 				<ul class="access-submenu">
 					<li><a href="Matricula.aspx">Registrar Matricula</a></li>
+					<li><a href="MatriculaReservada.aspx">Matricula Reservada</a></li>
 					<li><a href="Matricula_Curso.aspx">Registrar Cursos</a></li>
 					
 				</ul>
@@ -44,16 +45,10 @@
 					<li><a href="Clases.aspx">Registrar Clases</a></li>
 					<li><a href="Curso.aspx">Cursos</a></li>
 					<li><a href="Docente.aspx">Docente</a></li>
-					<li><a href="Escuela.aspx">Escuela Falta</a></li>
-					<li><a href="Facultad.aspx">Facultad Falta</a></li>
-					<li><a href="Horario.aspx">Horario Falta</a></li>
-					<li><a href="PlanEstudio.aspx">PlanEstudio Falta</a></li>
-					<li><a href="PlanEstudio_Curso.aspx">DetallePlanEstudio Falta</a></li>
+						
 					<li><a href="Usuarios.aspx">Usuario</a></li>
 					<li><a href="Permisos.aspx">Permisos</a></li>
-					<li><a href="Rol.aspx">Rol Falta</a></li>
-					
-					
+				
 				</ul>
 			</li>
 		<li>

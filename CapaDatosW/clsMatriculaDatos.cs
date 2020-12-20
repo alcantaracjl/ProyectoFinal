@@ -55,7 +55,34 @@ namespace CapaDatosW
             }
             return tabla;
         }
-        
+
+
+        public DataTable ListarMatriculaReservadaIdUsuario(String id)
+        {
+            SqlConnection Con = null;
+            DataTable tabla = new DataTable();
+            SqlDataReader dr = null;
+            try
+            {
+                Con = clsConexion.GetInstance().ConexionBD();
+                SqlCommand Cmd = new SqlCommand("sp_listarMatriculaReservadaIdUsuario", Con);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("@idusuario", id);
+                Con.Open();
+                dr = Cmd.ExecuteReader();
+                tabla.Load(dr);
+            }
+            catch (Exception e)
+            {
+                tabla = null;
+                throw e;
+            }
+            finally
+            {
+                Con.Close();
+            }
+            return tabla;
+        }
 
         public void RegistrarMatricula(CapaEntidadesW.clsMatriculaEntidad cls)
         {

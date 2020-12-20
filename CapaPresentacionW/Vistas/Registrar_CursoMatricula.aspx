@@ -19,21 +19,21 @@
 <AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
 
                 <Columns>
-                    <asp:BoundField DataField="idclases" HeaderText="idclases" SortExpression="idclases" />
+                    <asp:BoundField DataField="idclases" HeaderText="idclases" SortExpression="idclases" Visible="false"  />
                     <asp:BoundField DataField="Escuela" HeaderText="Escuela" SortExpression="Escuela" />
-                    <asp:BoundField DataField="idCurso" HeaderText="idCurso" SortExpression="idCurso" />
+                    <asp:BoundField DataField="idCurso" HeaderText="idCurso" SortExpression="idCurso" Visible="false"  />
                     <asp:BoundField DataField="Curso" HeaderText="Curso" SortExpression="Curso" />
                     <asp:BoundField DataField="Creditos" HeaderText="Creditos" SortExpression="Creditos" />
-                    <asp:BoundField DataField="idHorario" HeaderText="idHorario" SortExpression="idHorario" />
+                    <asp:BoundField DataField="idHorario" HeaderText="idHorario" SortExpression="idHorario" Visible="false"  />
                     <asp:BoundField DataField="Dia" HeaderText="Dia" SortExpression="Dia" />
                     <asp:BoundField DataField="Horario" HeaderText="Horario" SortExpression="Horario" />
-                    <asp:BoundField DataField="idSeccion" HeaderText="idSeccion" SortExpression="idSeccion" />
+                    <asp:BoundField DataField="idSeccion" HeaderText="idSeccion" SortExpression="idSeccion" Visible="false"  />
                     <asp:BoundField DataField="Seccion" HeaderText="Seccion" SortExpression="Seccion" />
                     <asp:BoundField DataField="Vacantes" HeaderText="Vacantes" SortExpression="Vacantes" />
                     <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
                     <asp:BoundField DataField="iddocente" HeaderText="iddocente" SortExpression="iddocente" />
                     <asp:BoundField DataField="Docente" HeaderText="Docente" SortExpression="Docente" />
-                    <asp:ButtonField HeaderText="Quitar" ShowHeader="True" Text="Quitar" CommandName="Seleccionar" >
+                    <asp:ButtonField HeaderText="Seleccionar" ShowHeader="True" Text="Seleccionar" CommandName="Seleccionar" >
                     <FooterStyle HorizontalAlign="Center" />
                     <ItemStyle HorizontalAlign="Center" />
                     </asp:ButtonField>
@@ -66,8 +66,8 @@
 <AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
 
                 <Columns>
-                     <asp:BoundField DataField="idClase" HeaderText="idClase" SortExpression="idClase" />
-                    <asp:BoundField DataField="idCurso" HeaderText="idCurso" SortExpression="idCurso" />
+                     <asp:BoundField DataField="idClase" HeaderText="idClase" SortExpression="idClase" Visible="false"  />
+                    <asp:BoundField DataField="idCurso" HeaderText="idCurso" SortExpression="idCurso" Visible="false"  />
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
                    <asp:BoundField DataField="Creditos" HeaderText="Creditos" SortExpression="Creditos" />
                    <asp:ButtonField HeaderText="Actualizar" ShowHeader="True" Text="Añadir" CommandName="Seleccionar" >

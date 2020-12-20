@@ -6,7 +6,7 @@
 		<div class="wrap-contact100">
 			
 				<span class="contact100-form-title">
-					Registro de Clientes
+					Registro de Usuarios
 				</span>
 				<div class="wrap-input100 validate-input bg1" data-validate="Ingrese su usuario">
 					<span class="label-input100">Usuario : *</span>
@@ -26,7 +26,8 @@
 					<span class="label-input100">Apellido Paterno : *</span>
                     <asp:TextBox class="input100" type="text" ID="TxtApellidopat" runat="server"  placeholder="Ingrese su apellido paterno"></asp:TextBox>
 				</div>
-			</div>
+
+			
                 <div class="wrap-input100 validate-input bg1" data-validate="Ingrese su apellido materno">
 					<span class="label-input100">Apellido Materno : *</span>
                     <asp:TextBox class="input100" type="text" ID="txtApellidomat" runat="server"  placeholder="Ingrese su apellido materno"></asp:TextBox>
@@ -63,6 +64,12 @@
 				<div class="container-contact100-form-btn">
                 <asp:Button class="contact100-form-btn" ID="cmdRegistrar" runat="server" Text="Registrar" OnClick="cmdRegistrar_Click"/>                    
                </div>
+
+
+			</div>
+
+
+
 		
 		</div>
 	

@@ -15,12 +15,12 @@
 <AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
 
                 <Columns>
-                    <asp:BoundField DataField="idMatricula" HeaderText="idMatricula" SortExpression="idMatricula" />
+                    <asp:BoundField DataField="idMatricula" HeaderText="idMatricula" SortExpression="idMatricula" Visible="false"  />
                     <asp:BoundField DataField="codAlumno" HeaderText="codAlumno" SortExpression="codAlumno" />
                     <asp:BoundField DataField="Alumno" HeaderText="Alumno" SortExpression="Alumno" />
-                    <asp:BoundField DataField="idPeriodo" HeaderText="idPeriodo" SortExpression="idPeriodo" />
+                    <asp:BoundField DataField="idPeriodo" HeaderText="idPeriodo" SortExpression="idPeriodo"  Visible="false" />
                     <asp:BoundField DataField="Periodo" HeaderText="Periodo" SortExpression="Periodo" />
-                    <asp:BoundField DataField="idCiclo" HeaderText="idCiclo" SortExpression="idCiclo" />
+                    <asp:BoundField DataField="idCiclo" HeaderText="idCiclo" SortExpression="idCiclo" Visible="false"  />
                     <asp:BoundField DataField="Ciclo" HeaderText="Ciclo" SortExpression="Ciclo" />
                     <asp:BoundField DataField="Fecha" HeaderText="Fecha" SortExpression="Fecha" />
                     <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
